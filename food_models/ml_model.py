@@ -12,14 +12,14 @@ import json
 warnings.filterwarnings(action='ignore', category=UserWarning)
 
 
-coffee_data = pd.read_csv("CPI_Urban_US_City_avg.csv")
+food_data = pd.read_csv("food_data/CPI_Urban_US_City_avg.csv")
 
-for index, element in enumerate(coffee_data["DATE"]):
+for index, element in enumerate(food_data["DATE"]):
     stuff = [int(x) for x in list(element.split(sep="/"))]
-    coffee_data["DATE"][index] = datetime(stuff[2], stuff[0], stuff[1], 0, 0).timestamp()
+    food_data["DATE"][index] = datetime(stuff[2], stuff[0], stuff[1], 0, 0).timestamp()
 
-X = coffee_data[["DATE"]]
-Y = coffee_data[["CPI"]]
+X = food_data[["DATE"]]
+Y = food_data[["CPI"]]
 
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, train_size=0.2)
 
