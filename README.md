@@ -21,6 +21,6 @@ Using datasets of price increase percentages of different categories of food pro
     - Scikit-learn and Pandas (Python)
 
 # What was the hardest part of our project?
-There were many difficult parts, but thee most difficult parts were (1) finding the datasets online and (2) implementing the UI and UX into our website using HTML/CSS.
+There were many difficult parts, but the most difficult parts were (1) finding the datasets online and (2) implementing the UI and UX into our website using HTML/CSS.
 
 # [Project Link](https://agonizingshabbyprediction.epiccodewizard2.repl.co/)
