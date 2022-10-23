@@ -28,15 +28,11 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y, train_size=0.2)
 lr = LinearRegression()
 lr.fit(X_train, Y_train)
 
-def predict(date: str):
+def predict(date0, date1, date2):
     
-    date_list = [int(x) for x in list(date.split(sep="/"))]
-    epoch_time_of_date = datetime(date_list[2], date_list[0], date_list[1], 0, 0).timestamp()
+    epoch_time_of_date = datetime(date2, date0, date1, 0, 0).timestamp()
     prediction_array = np.array([[epoch_time_of_date]])
 
     price_pred = lr.predict(prediction_array)
     return round(float(json.loads(str(price_pred))[0][0]), 2)
-
-test = predict("9/1/2022")
-print(test)
 
