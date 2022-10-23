@@ -20,3 +20,4 @@ Using datasets of price increase percentages of different categories of food pro
 - Machine Learning Models (for the data)
     - Scikit-learn and Pandas (Python)
 
+# [Project Link](https://agonizingshabbyprediction.epiccodewizard2.repl.co/)
