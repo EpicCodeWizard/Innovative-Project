@@ -36,6 +36,3 @@ def predict(date0, date1, date2):
     price_pred = lr.predict(prediction_array)
     return round(float(json.loads(str(price_pred))[0][0]), 2)
 
-test = predict("9/1/2022")
-print(test)
-

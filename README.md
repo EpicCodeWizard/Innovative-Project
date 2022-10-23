@@ -1,2 +1,2 @@
-# Unite Hacks Innovation Project
-Website to view grocery prizes.
+# What is our Project?
+Our project is a food price calculator that takes the 
